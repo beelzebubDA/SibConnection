@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/vars.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Личный кабинет</title>
+</head>
+
+
+<body class="page">
+    <div class="wrapper" style="padding: 20px;">
+
+        <div class="container" style="display: grid; grid-template-columns: 100%; gap: 50px;">
+            <div class="text16">
+                <strong>class = _grid</strong> - для сетки(12 колонок) <br>
+                <p class="text18">Desktop</p>
+                <strong>class = col</strong> - для колонок <br>
+                <strong>class = col1</strong> - (1 колонка) <br>
+                <strong>class = col2</strong> - (2 колонки) <br>
+                <strong>class = col3</strong> - (3 колонки) и т.д. <br>
+                <br><br>
+                <p class="text18">Tablet</p>
+                <strong>class = col-tablet</strong> - для колонок <br>
+                <strong>class = col-tablet1</strong> - (1 колонка) <br>
+                <strong>class = col-tablet2</strong> - (2 колонки) <br>
+                <strong>class = col-tablet3</strong> - (3 колонки) и т.д. <br>
+
+                <br><br>
+                <p class="text18">Mobile</p>
+                <strong>class = col-mob</strong> - для колонок <br>
+                <strong>class = col-mob1</strong> - (1 колонка) <br>
+                <strong>class = col-mob2</strong> - (2 колонки) <br>
+                <strong>class = col-mob3</strong> - (3 колонки) и т.д. <br>
+            </div>
+
+            <div class="_grid _center">
+                <div class="col col-mob12 _test-gray"></div>
+                <!--                <div class="col _test-gray"></div>-->
+                <div class="col _test-gray"></div>
+                <div class="col _test-gray"></div>
+                <div class="col _test-gray"></div>
+                <div class="col _test-gray"></div>
+                <div class="col _test-gray"></div>
+                <div class="col _test-gray"></div>
+                <div class="col _test-gray"></div>
+                <div class="col _test-gray"></div>
+                <div class="col _test-gray"></div>
+                <div class="col _test-gray"></div>
+            </div>
+
+            <div class="_grid">
+                <div class="col2 _test-gray"></div>
+                <div class="col2 _test-gray"></div>
+                <div class="col2 _test-gray"></div>
+                <div class="col2 _test-gray"></div>
+                <div class="col2 _test-gray"></div>
+                <div class="col2 _test-gray"></div>
+            </div>
+
+            <div class="_grid">
+                <div class="col3 _test-gray"></div>
+                <div class="col3 _test-gray"></div>
+                <div class="col3 _test-gray"></div>
+                <div class="col3 _test-gray"></div>
+            </div>
+
+            <div class="_grid">
+                <div class="col4 _test-gray"></div>
+                <div class="col4 _test-gray"></div>
+                <div class="col4 _test-gray"></div>
+            </div>
+
+            <div class="_grid">
+                <div class="col6 _test-gray"></div>
+                <div class="col6 _test-gray"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal" id="loginModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__header">
+                <div class="modal__logo">
+                    <img src="img/logo.svg" alt="" />
+                </div>
+                <button class="modal__close _close-modal">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#close-icon"></use>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="modal__title text32">Вход в личный кабинет</div>
+            <form class="modal__form">
+                <fieldset class="fg _small">
+                    <label>Логин *</label>
+                    <input type="text" />
+                </fieldset>
+                <fieldset class="fg _small">
+                    <label>Пароль *</label>
+                    <input type="password" />
+                    <button type="button" class="pass-toggle"></button>
+                </fieldset>
+                <div class="modal__nav">
+                    <div class="m-check">
+                        <input type="checkbox" />
+                        <label>
+                            <span>Запомнить меня</span>
+                        </label>
+                    </div>
+                    <a href="" class="modal__forgot text16 font2"> Забыли пароль? </a>
+                </div>
+                <div class="modal__nav2">
+                    <button class="modal__btn m-btn m-btn-blue">
+                        <span>Войти</span>
+                    </button>
+                    <button class="modal__btn m-btn m-btn-blue _dark">
+                        <span>Регистрация</span>
+                    </button>
+                </div>
+            </form>
+            <div class="modal__confirm">
+                <div class="text14">
+                    Продолжая, вы соглашаетесь с <a href="">политикой конфиденциальности</a>
+                </div>
+            </div>
+            <div class="login-socials">
+                <div class="login-socials__title text18 semi-bold-text">
+                    Войти с помощью
+                </div>
+                <div class="login-socials__grid">
+                    <a href="" class="login-socials__btn">
+                        <img src="img/google.svg" alt="">
+                    </a>
+                    <a href="" class="login-socials__btn">
+                        <img src="img/mail.svg" alt="">
+                    </a>
+                    <a href="" class="login-socials__btn">
+                        <img src="img/vk2.svg" alt="">
+                    </a>
+                    <a href="" class="login-socials__btn">
+                        <img src="img/b.svg" alt="">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal service-modal" id="orderModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg>
+                    <use xlink:href="img/sprite.svg#close-icon"></use>
+                </svg>
+            </button>
+
+            <div class="modal__title text32">Заказать услугу</div>
+            <form class="modal__form">
+                <fieldset class="fg _small">
+                    <label>Ваше Имя</label>
+                    <input type="text" />
+                </fieldset>
+                <fieldset class="fg _small">
+                    <label>Телефон</label>
+                    <input type="tel" />
+                </fieldset>
+                <fieldset class="fg _small">
+                    <label>E-mail</label>
+                    <input type="email" />
+                </fieldset>
+                <fieldset class="fg _small">
+                    <label>Услуга</label>
+                    <input type="text" />
+                </fieldset>
+                <fieldset class="fg _small">
+                    <label>Сообщение</label>
+                    <textarea></textarea>
+                </fieldset>
+
+                <div class="modal__nav2">
+                    <button class="modal__btn m-btn m-btn-blue">
+                        <span>Отправить</span>
+                    </button>
+                </div>
+            </form>
+            <div class="modal__confirm">
+                <div class="text14">
+                    Продолжая, вы соглашаетесь с <a href="">политикой конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-modal">
+        <div class="product-modal__bg"></div>
+        <div class="product-modal__slider">
+            <div class="product">
+                <div class="product__img">
+                    <img src="img/product.webp" alt="" />
+                </div>
+                <div class="product__content">
+                    <div class="text20 semi-bold-text">АТС Panasonic KX-TEM824RU</div>
+                    <div class="product-review">
+                        <div class="product-review__rating text16">
+                            <img src="img/star.svg" alt="" />
+                            <img src="img/star.svg" alt="" />
+                            <img src="img/star.svg" alt="" />
+                            <img src="img/star.svg" alt="" />
+                            <img class="empty__star" src="img/star_dark.svg" alt="" />
+                            <span>4.3</span>
+                        </div>
+                        <span class="product-review__count text14 dark-gray-text">
+            10 отзывов
+          </span>
+                    </div>
+                    <div class="product-price">
+                        <div class="product-price__top">
+                            <div class="product-price__nums">
+                                <span class="product-price__new">3 870 ₽</span>
+                                <span class="product-price__old">4 300 ₽</span>
+                            </div>
+                            <div class="card__buttons card__buttons-vert">
+                                <button class="comparsion-btn">
+                                    <span class="comparsion-btn__icon"></span>
+                                </button>
+                                <button class="favourite-btn">
+                                    <span class="favourite-btn__icon"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-price__nav">
+                            <button class="product-price__btn m-btn m-btn-blue">
+                                <span>В корзину</span>
+                            </button>
+                            <button class="product-price__btn m-btn m-btn-blue _light">
+                                <span>Купить в один клик</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-has">
+                        <i class="product-has__icon"></i>
+                        <span class="product-has__text">В наличии</span>
+                    </div>
+                    <div class="props">
+                        <div class="text18 semi-bold-text">Характеристики</div>
+                        <div class="props__items">
+                            <div class="props__item text16">Городских линий — 6</div>
+                            <div class="props__item text16">Внутренних абонентов — 16</div>
+                            <div class="props__item text16">Страна производства — Япония</div>
+                        </div>
+                    </div>
+                    <div class="product-desc">
+                        <div class="product-desc__text text16 grey-text2">
+                            <p>Аналоговая гибридная АТС</p>
+                            <p>
+                                АТС Panasonic KX-TEМ824RU — хорошее решение для предприятий малого
+                                бизнеса.
+                            </p>
+                        </div>
+                        <div class="product-desc__nav">
+                            <a href="" class="product-desc__btn">
+                                <span>Всё описание</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="product-modal__detail m-btn m-btn-outline _blue">
+                    <span>Подробнее о товаре</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
